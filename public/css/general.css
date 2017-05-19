@@ -1,0 +1,285 @@
+#btnVolver, #btnVolverAtras, #btnBrochure, #btnVolverPanel {
+	color: #fff;
+	background-color: #000;
+
+	border: none;
+	border-right: 5px solid #ed7818;
+	border-bottom: 5px solid #ed7818;
+
+	padding: 10px;
+
+	width: 100%;
+}
+
+#btnVolverAtras {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.logoExma {
+	background-image: "url('../img/loggo-exma.png')";
+
+	height: 20px;
+}
+
+.aviso { padding: 30px; }
+
+.margenArriba { margin-top: 30px; }
+.margenAbajo { margin-bottom: 30px; }
+
+label {
+	color: #666;
+	
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+/*.texto-center {
+	text-align: center;
+}*/
+
+.logoImagen {
+	width: 120px;
+	height: 100%;
+}
+
+.container-90 {
+	width: 90%;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-95 {
+	width: 95%;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+select { padding: 10px; }
+
+.mostrar { display: block; }
+.esconder { display: none; }
+
+.text-center { text-align: center; }
+.bold { font-weight: bold; }
+
+.color-cafe { color: brown; }
+.color-red { color: #a94442; }
+
+.colIzq { text-align: left; }
+.colDer { text-align: right; }
+
+
+/* COMIENZA EL EFECTO DE CARGANDO 2 */
+@media screen and (max-width: 767px) {
+	.loader {
+		width: 31%;
+		height: 38%;
+		background: url('../img/Loading25.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+}
+
+@media (min-width: 767px) {
+	.loader {
+		width: 30%;
+		height: 60%;
+		/*z-index: 9999;*/
+		background: url('../img/Loading50.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+}
+
+.loader {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+	/*width: 30%;*/
+	/*height: 60%;*/
+	z-index: 9999;
+	/*background: url('../img/Loading50.gif') 50% 50% no-repeat rgb(249,249,249);*/
+}
+
+.loader-fondo {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 9998;
+
+	background-color: #fff;
+}
+
+
+/* TIPO DE PAGO Y GESTION DE BUTACA */
+.tipoPago + label ,
+.gestionButaca + label {
+	color: #000;
+
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.tipoPago + label:hover,
+.gestionButaca + label:hover  {
+	background-color: #b8b894;
+}
+
+.tipoPago + label:before,
+.gestionButaca + label:before {
+	content: "";
+
+	width: 17px;
+	height: 17px;
+
+	display: inline-block;
+
+	background-color: none;
+	border: 3px solid #000;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 17px;
+	top: 6px;
+}
+
+.tipoPago:checked + label,
+.gestionButaca:checked + label {
+	padding: 5px 15px;
+
+	background-color: #000;
+	border-radius: 2px;
+
+	color: #fff;
+}
+
+
+/* VIP */
+#rbSectorVip + label {
+	color: #000;
+
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#rbSectorVip + label:hover {
+	background-color: #fff980;
+}
+
+#rbSectorVip + label:before {
+	content: "";
+
+	width: 17px;
+	height: 17px;
+
+	display: inline-block;
+
+	background-color: none;
+	border: 3px solid #e6da00;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 17px;
+	top: 6px;
+}
+
+#rbSectorVip:checked + label {
+	padding: 5px 15px;
+
+	background-color: #FFF53C;
+	border-radius: 2px;
+
+	color: #000;
+}
+
+/* BUSINESS */
+#rbSectorBusiness + label {
+	color: #000;
+
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+
+#rbSectorBusiness + label:hover {
+	background-color: #99b3ff;
+}
+
+#rbSectorBusiness + label:before {
+	content: "";
+
+	width: 17px;
+	height: 17px;
+
+	display: inline-block;
+
+	background-color: none;
+	border: 3px solid #4d79ff;
+	border-radius: 50%;
+
+	position: absolute;
+	left: 17px;
+	top: 6px;
+}
+
+#rbSectorBusiness:checked + label {
+	padding: 5px 15px;
+
+	background-color: #4d79ff;
+	border-radius: 2px;
+
+	color: #fff;
+}
+
+
+/* GENERAL */
+.radio input[type="radio"] {
+	display: none;
+}
+
+#rbSectorBusiness:checked + label:before,
+#rbSectorVip:checked + label:before,
+.tipoPago:checked + label:before,
+.gestionButaca:checked + label:before {
+	display: none;
+}

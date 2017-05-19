@@ -1,0 +1,405 @@
+body {
+	overflow-x: hidden;
+}
+
+td {
+	/*table-layout: fixed;*/
+	/*table-layout: auto;*/
+	/*width: 44px;*/
+	height: 90px;
+
+	text-align: center;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/sillas2/suelo.jpg'); 
+
+	color: #000;
+
+	/*font-size: 2em;*/
+
+	font-weight: bold;
+}
+/*
+.ancho-20 {
+	width: 20px;
+}*/
+
+.container-sillas {
+	padding: 0;
+}
+
+
+#formulario {
+	color: #fff;
+}
+
+#formulario label {
+	color: #fff;
+}
+
+
+.sillasLibres:hover, .sillasOcupadas:hover, .sillasSeleccionadas:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.sillasLibres:hover, .sillasOcupadas:hover, .sillasSeleccionadas:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.sillasLibresDerecha {
+	content: url('../img/sillas2/sillasLibreDerecha.png');
+
+	width: 100%;
+	height: 100%;
+}
+
+.sillasLibresDerecha:hover, .sillasSeleccionadasDerecha {
+	content: url('../img/sillas2/sillasSeleccionadaDerecha.png');
+
+	width: 100%;
+	height: 100%;
+}
+
+
+/* COLOR DE VIP #FFF53C */
+
+.sillasOcupadasDerecha {
+	content: url('../img/sillas2/sillasOcupadaDerecha.png');
+
+	width: 100%;
+	height: 100%;
+}
+
+
+.sillasNoSeleccionables {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.asientoVip {
+	background-color: #FFF53C;
+}
+
+.asientoBusiness {
+	background-color: #4d79ff;
+}
+
+.asientoAuspiciadores {
+	background-color: #00e64d;
+}
+
+.fondo-negro {
+	background-color: #000;
+	background-image: none; 
+}
+
+/* ESCENARIO */
+#escenario {
+	/*height: 300px;*/
+	/*width: 100%;*/
+
+	background-image: url('../img/sillas2/escenario2.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	/*background-color: black;*/
+}
+
+.margenIzq {
+	margin-left: 15px;
+}
+
+
+.escenarioSalido1 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido01.jpg');
+}
+
+.escenarioSalido2 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido02.jpg');
+}
+
+.escenarioSalido3 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido03.jpg');
+}
+
+.escenarioSalido4 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido04.jpg');
+}
+
+.escenarioSalido5 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido05.jpg');
+}
+
+.escenarioSalido6 {
+	background-image: url('../img/sillas2/escenarioSalido/escenarioSalido06.jpg');
+}
+
+
+
+.center {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.margenArriba {
+	margin-top: 35px;
+}
+
+
+
+.sillasNoSeleccionablesVip {
+	background-color: #FFF53C;
+
+	vertical-align: middle;
+	text-align: center;
+}
+
+.sillasNoSeleccionablesBusiness {
+	background-color: #4d79ff;
+
+	color: #fff;
+
+	vertical-align: middle;
+	text-align: center;
+}
+
+.sillasNoSeleccionablesAuspiciadores {
+	background-color: #00e64d;
+
+	color: #fff;
+
+	vertical-align: middle;
+	text-align: center;
+}
+
+.tabla {
+	table-layout: fixed;
+
+	overflow-x: auto;
+	overflow-y: scroll;
+
+	height: 100%;
+}
+
+#lblAsientoSeleccionado {
+	background-color: #22B14C;
+	padding: 5px;
+
+	color: #fff;
+}
+
+#lblSector {
+	padding: 5px;
+
+	color: #fff;
+}
+
+#asientosOcupados {
+	display: none;
+}
+
+.inline {
+	display: inline-block;
+}
+
+
+/* MODAL IMAGE */
+/* Style the Image Used to Trigger the Modal */
+#asientosGeneral {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#asientosGeneral:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modalAsientos {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    /*top: 65px;*/
+    right: 35px;
+    /*color: #f1f1f1;*/
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+#btnCerrarVistaGeneral {
+    position: absolute;
+    top: 65px;
+    color: #f1f1f1;
+    z-index: 100;
+    right: 35px;
+    /*color: #f1f1f1;*/
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+	#btnCerrarVistaGeneral {
+		top: 100px;
+		right: 15px;
+
+		color: #000;
+
+		/*background-color: #000;*/
+
+		z-index: 100;
+	}
+
+	#btnCerrarVistaGeneral:hover {
+		color: #fff;
+	}
+}
+
+.close:hover,
+.close:focus,
+#btnCerrarVistaGeneral:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+.imgPeq {
+	width: 20px;
+	height: auto;
+}
+
+
+/*#imgVistaGeneral:hover {
+	background-color: #fff;
+	color: #5bc0de;*/
+
+/*	-webkit-transition: 0.5s;
+		-ms-transition: 0.5s;
+			transition: 0.5s;*
+}
+
+#imgVistaGeneral {
+	-webkit-transition: 0.5s;
+		-ms-transition: 0.5s;
+			transition: 0.5s;
+}
+
+#btnSubmit:hover {
+	background-color: #fff;
+	color: #5cb85c;
+
+	/*-webkit-transition: 0.5s;
+		-ms-transition: 0.5s;
+			transition: 0.5s;*
+}
+
+/*#btnSubmit {
+	-webkit-transition: 0.5s;
+		-ms-transition: 0.5s;
+			transition: 0.5s;
+}*/
+
+
+
+/*@media only screen and (max-width: 700px){
+	td {
+		/*table-layout: fixed;*/
+		/*table-layout: auto;*
+		width: 60px;
+		height: 145px;
+
+		text-align: center;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/sillas2/suelo.jpg'); 
+
+		color: #000;
+
+		font-weight: bold;
+	}
+
+
+	.sillasLibresDerecha {
+		width: 100%;
+		height: 100%;
+	}
+
+	.sillasLibresDerecha:hover, .sillasSeleccionadasDerecha {
+		width: 100%;
+		height: 100%;
+	}
+
+	.sillasOcupadasDerecha {
+		width: 100%;
+		height: 100%;
+	}
+}*/
